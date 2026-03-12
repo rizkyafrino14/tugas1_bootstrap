@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Digital - Tata Busana (Fashion Design)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        :root {
+            --primary-pink: #d63384; /* Warna khas fashion/estetik */
+            --dark-bg: #1a1d21;
+        }
+
+        body { background-color: #f0f2f5; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        /* Navbar */
+        .navbar { background-color: var(--dark-bg); }
+        .navbar-brand img { height: 30px; margin-right: 10px; }
+
+        /* Hero Section - Diganti dengan image bertema Fashion */
+        .hero-section {
+            background: linear-gradient(rgba(214, 51, 132, 0.7), rgba(214, 51, 132, 0.7)), 
+                        url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            color: white;
+            text-align: center;
+        }
+
+        /* Card & UI Elements */
+        .main-card { border: none; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .icon-box {
+            width: 50px; height: 50px;
+            background-color: #fff0f6;
+            color: var(--primary-pink);
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 10px; font-size: 1.5rem;
+        }
+        
+        .sidebar-card { border: none; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .sidebar-header { background-color: var(--dark-bg); color: white; padding: 15px; font-weight: bold; }
+
+        /* Progress Bar */
+        .progress { height: 10px; border-radius: 5px; background-color: #e9ecef; }
+        .progress-bar { background-color: var(--primary-pink); }
+
+        footer { background-color: var(--dark-bg); color: #94a3b8; padding: 20px 0; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../../tugas_bootstrap2.html">
+                <img src="../../assets/logoschool.png" alt="Logo">
+                <span class="fw-bold">SMK DIGITAL</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="../../tugas_bootstrap2.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../tugas_bootstrap2.html#visi">Visi Misi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../tugas_bootstrap2.html#table">Data Siswa</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Jurusan</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="../rpl/index.html">Pplg</a></li>
+                            <li><a class="dropdown-item" href="../tjkt/index.html">Tjkt</a></li>
+                            <li><a class="dropdown-item" href="../kuliner/index.html">Kuliner</a></li>
+                            <li><a class="dropdown-item" href="../busana/index.html">Busana</a></li>
+                            <li><a class="dropdown-item" href="../otomotif/index.html">Otomotif</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../../tugas_bootstrap2.html#jurusan">Lihat Semua</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="fw-bold mb-3 text-uppercase">Tata Busana (Fashion Design)</h1>
+            <p class="mx-auto" style="max-width: 800px; opacity: 0.9;">
+                Mencetak desainer muda yang kreatif, inovatif, dan terampil dalam menciptakan karya busana berkualitas tinggi yang siap bersaing di industri kreatif global.
+            </p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-4">
+            
+            <div class="col-lg-8">
+                <div class="card main-card p-4 p-md-5 mb-4 bg-white">
+                    <h2 class="fw-bold mb-4">Ekspresikan Kreativitas Melalui Tekstil</h2>
+                    <p class="text-muted leading-relaxed mb-5">
+                        Jurusan Tata Busana SMK Digital membekali siswa dengan kemampuan teknik menjahit, pembuatan pola manual dan digital, desain ilustrasi busana, hingga manajemen bisnis fashion. Kami fokus pada pengembangan bakat seni yang dipadukan dengan tren teknologi industri masa kini.
+                    </p>
+
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box me-3"><i class="fas fa-cut"></i></div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Fashion Design</h6>
+                                    <p class="small text-muted mb-0">Merancang konsep busana, ilustrasi gaya, dan pemilihan bahan.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box me-3" style="background-color: #fff9db; color: #f59f00;"><i class="fas fa-scissors"></i></div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Pattern Making</h6>
+                                    <p class="small text-muted mb-0">Teknik konstruksi pola pakaian yang presisi dan nyaman dipakai.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="fw-bold mb-3">Fasilitas Unggulan</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            Workshop Menjahit (Industri & Digital)
+                            <span class="badge bg-danger rounded-pill">Standar Industri</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            Studio Fashion Design & Display
+                            <span class="badge bg-danger rounded-pill">Galeri Karya</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            Laboratorium Fashion CAD (Desain Digital)
+                            <span class="badge bg-danger rounded-pill">Software Optitex</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                
+                <div class="card sidebar-card mb-4 bg-white">
+                    <div class="sidebar-header text-center">Status Pendaftaran</div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="small fw-bold">Kuota Terisi</span>
+                            <span class="small fw-bold">85%</span>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%"></div>
+                        </div>
+                        <a href="#" class="btn btn-danger w-100 fw-bold py-2 mb-2" style="background-color: var(--primary-pink); border: none;">DAFTAR SEKARANG</a>
+                        <button class="btn btn-light w-100 text-muted small" onclick="window.history.back()"><i class="fas fa-arrow-left me-2"></i>Kembali</button>
+                    </div>
+                </div>
+
+                <div class="card sidebar-card bg-white">
+                    <img src="https://images.unsplash.com/photo-1556905055-8f358a7a4bb4?auto=format&fit=crop&q=80" class="card-img-top" alt="Workshop Busana">
+                    <div class="card-body">
+                        <p class="card-text fst-italic text-muted small mb-3">
+                            "Berkat program di Tata Busana, saya kini sudah bisa memproduksi brand hijab sendiri sebelum lulus sekolah."
+                        </p>
+                        <h6 class="fw-bold mb-0">- Siti, Alumni 2023</h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">© 2026 SMK DIGITAL. Seluruh Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
