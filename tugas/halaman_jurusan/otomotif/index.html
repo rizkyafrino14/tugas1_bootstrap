@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMK Digital - Pengembangan Perangkat Lunak dan GIM</title>
+    <title>SMK Digital - Teknik Otomotif</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         :root {
-            --primary-blue: #2b6df5;
+            --primary-otomotif: #dc2626; /* Warna Merah yang melambangkan energi dan mesin */
             --dark-bg: #1a1d21;
         }
 
@@ -20,8 +20,8 @@
 
         /* Hero Section */
         .hero-section {
-            background: linear-gradient(rgba(43, 109, 245, 0.8), rgba(43, 109, 245, 0.8)), 
-                        url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80');
+            background: linear-gradient(rgba(220, 38, 38, 0.7), rgba(220, 38, 38, 0.7)), 
+                        url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80');
             background-size: cover;
             background-position: center;
             padding: 80px 0;
@@ -33,8 +33,8 @@
         .main-card { border: none; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         .icon-box {
             width: 50px; height: 50px;
-            background-color: #eef4ff;
-            color: var(--primary-blue);
+            background-color: #fef2f2;
+            color: var(--primary-otomotif);
             display: flex; align-items: center; justify-content: center;
             border-radius: 10px; font-size: 1.5rem;
         }
@@ -44,7 +44,7 @@
 
         /* Progress Bar */
         .progress { height: 10px; border-radius: 5px; background-color: #e9ecef; }
-        .progress-bar { background-color: var(--primary-blue); }
+        .progress-bar { background-color: var(--primary-otomotif); }
 
         footer { background-color: var(--dark-bg); color: #94a3b8; padding: 20px 0; font-size: 0.9rem; }
     </style>
@@ -84,9 +84,9 @@
 
     <header class="hero-section">
         <div class="container">
-            <h1 class="fw-bold mb-3 text-uppercase">Pengembangan Perangkat Lunak dan GIM</h1>
+            <h1 class="fw-bold mb-3 text-uppercase">Teknik Otomotif</h1>
             <p class="mx-auto" style="max-width: 800px; opacity: 0.9;">
-                Jurusan yang membekali peserta didik dengan pengetahuan, keterampilan, dan sikap unggul agar siap menjadi tenaga kompeten di bidang rekayasa perangkat lunak.
+                Mencetak teknisi ahli yang handal dalam pemeliharaan, perbaikan, dan pengembangan teknologi kendaraan bermotor di era elektrifikasi.
             </p>
         </div>
     </header>
@@ -96,45 +96,45 @@
             
             <div class="col-lg-8">
                 <div class="card main-card p-4 p-md-5 mb-4 bg-white">
-                    <h2 class="fw-bold mb-4">Membangun Masa Depan Melalui Kode</h2>
+                    <h2 class="fw-bold mb-4">Menguasai Teknologi Mobilitas Masa Depan</h2>
                     <p class="text-muted leading-relaxed mb-5">
-                        Rekayasa Perangkat Lunak (RPL) / PPLG merupakan program keahlian yang mempelajari proses pembuatan perangkat lunak secara lengkap, mulai dari analisis kebutuhan pengguna, perancangan sistem, pemrograman, pengujian, hingga pemeliharaan aplikasi setelah digunakan.
+                        Jurusan Teknik Otomotif di SMK Digital fokus pada kompetensi teknik kendaraan ringan. Siswa dibekali pemahaman mendalam mengenai sistem mesin, kelistrikan otomotif, sistem sasis, pemindah tenaga, hingga pengenalan teknologi kendaraan listrik (EV) dan sistem EFI modern.
                     </p>
 
                     <div class="row g-4 mb-5">
                         <div class="col-md-6">
                             <div class="d-flex align-items-center">
-                                <div class="icon-box me-3"><i class="fas fa-code"></i></div>
+                                <div class="icon-box me-3"><i class="fas fa-car-side"></i></div>
                                 <div>
-                                    <h6 class="fw-bold mb-1">Web Dev</h6>
-                                    <p class="small text-muted mb-0">Menguasai Frontend (React) & Backend (NodeJS/PHP).</p>
+                                    <h6 class="fw-bold mb-1">Maintenance & Repair</h6>
+                                    <p class="small text-muted mb-0">Teknik servis berkala, tune-up, dan perbaikan mesin bensin/diesel.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="d-flex align-items-center">
-                                <div class="icon-box me-3" style="background-color: #f0fff4; color: #38a169;"><i class="fas fa-gamepad"></i></div>
+                                <div class="icon-box me-3" style="background-color: #f8fafc; color: #64748b;"><i class="fas fa-microchip"></i></div>
                                 <div>
-                                    <h6 class="fw-bold mb-1">Game Dev</h6>
-                                    <p class="small text-muted mb-0">Pembuatan aset 2D/3D dan mekanik gim menggunakan Unity.</p>
+                                    <h6 class="fw-bold mb-1">Electronic Diagnostic</h6>
+                                    <p class="small text-muted mb-0">Penggunaan Scanner Engine dan analisis sistem sensor kendaraan.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <h5 class="fw-bold mb-3">Fasilitas Unggulan</h5>
+                    <h5 class="fw-bold mb-3">Fasilitas Bengkel Utama</h5>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                            Laboratorium Komputer
-                            <span class="badge bg-primary rounded-pill">2 Lab</span>
+                            Workshop Kendaraan Ringan (Standar Dealer)
+                            <span class="badge bg-danger rounded-pill">4 Stall</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                            Akses High Speed Internet
-                            <span class="badge bg-primary rounded-pill">Full WiFi</span>
+                            Alat Uji Emisi & Diagnostik Digital
+                            <span class="badge bg-danger rounded-pill">Tersedia</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                            Sertifikasi Industri (Oracle/Microsoft)
-                            <span class="badge bg-primary rounded-pill">Voucher Tersedia</span>
+                            Kerjasama Industri (Astra/Toyota/Yamaha)
+                            <span class="badge bg-danger rounded-pill">Kelas Khusus</span>
                         </li>
                     </ul>
                 </div>
@@ -147,23 +147,23 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between mb-2">
                             <span class="small fw-bold">Kuota Terisi</span>
-                            <span class="small fw-bold">90%</span>
+                            <span class="small fw-bold">88%</span>
                         </div>
                         <div class="progress mb-4">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 88%"></div>
                         </div>
-                        <a href="#" class="btn btn-primary w-100 fw-bold py-2 mb-2" style="background-color: var(--primary-blue);">DAFTAR SEKARANG</a>
+                        <a href="#" class="btn btn-danger w-100 fw-bold py-2 mb-2" style="background-color: var(--primary-otomotif); border: none;">DAFTAR SEKARANG</a>
                         <button class="btn btn-light w-100 text-muted small"><i class="fas fa-arrow-left me-2"></i>Kembali</button>
                     </div>
                 </div>
 
                 <div class="card sidebar-card bg-white">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80" class="card-img-top" alt="Siswa">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80" class="card-img-top" alt="Teknisi Otomotif">
                     <div class="card-body">
                         <p class="card-text fst-italic text-muted small mb-3">
-                            "Belajar di PPLG SMK Digital membuka wawasan saya tentang dunia startup teknologi."
+                            "Praktek langsung dengan alat canggih membuat saya sangat percaya diri saat magang di industri otomotif."
                         </p>
-                        <h6 class="fw-bold mb-0">- Ahmad, Alumni 2024</h6>
+                        <h6 class="fw-bold mb-0">- Rian, Alumni 2024</h6>
                     </div>
                 </div>
 
