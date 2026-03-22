@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Digital - Teknik Jaringan Komputer dan Telekomunikasi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        :root {
+            --primary-tjkt: #0d9488; /* Warna Teal/Emerald khas teknologi jaringan */
+            --dark-bg: #1a1d21;
+        }
+
+        body { background-color: #f0f2f5; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        /* Navbar */
+        .navbar { background-color: var(--dark-bg); }
+        .navbar-brand img { height: 30px; margin-right: 10px; }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(13, 148, 136, 0.8), rgba(13, 148, 136, 0.8)), 
+                        url('https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            color: white;
+            text-align: center;
+        }
+
+        /* Card & UI Elements */
+        .main-card { border: none; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .icon-box {
+            width: 50px; height: 50px;
+            background-color: #f0fdfa;
+            color: var(--primary-tjkt);
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 10px; font-size: 1.5rem;
+        }
+        
+        .sidebar-card { border: none; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .sidebar-header { background-color: var(--dark-bg); color: white; padding: 15px; font-weight: bold; }
+
+        /* Progress Bar */
+        .progress { height: 10px; border-radius: 5px; background-color: #e9ecef; }
+        .progress-bar { background-color: var(--primary-tjkt); }
+
+        footer { background-color: var(--dark-bg); color: #94a3b8; padding: 20px 0; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../../tugas_bootstrap2.html">
+                <img src="../../assets/logoschool.png" alt="Logo">
+                <span class="fw-bold">SMK DIGITAL</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="../../tugas_bootstrap2.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../tugas_bootstrap2.html#visi">Visi Misi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../tugas_bootstrap2.html#table">Data Siswa</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Jurusan</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="../rpl/index.html">Pplg</a></li>
+                            <li><a class="dropdown-item" href="../tjkt/index.html">Tjkt</a></li>
+                            <li><a class="dropdown-item" href="../kuliner/index.html">Kuliner</a></li>
+                            <li><a class="dropdown-item" href="../busana/index.html">Busana</a></li>
+                            <li><a class="dropdown-item" href="../otomotif/index.html">Otomotif</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../../tugas_bootstrap2.html#jurusan">Lihat Semua</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="fw-bold mb-3 text-uppercase">Teknik Jaringan Komputer & Telekomunikasi</h1>
+            <p class="mx-auto" style="max-width: 800px; opacity: 0.9;">
+                Menyiapkan tenaga ahli yang kompeten dalam merancang, membangun, dan mengelola infrastruktur jaringan komputer serta sistem komunikasi modern.
+            </p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-4">
+            
+            <div class="col-lg-8">
+                <div class="card main-card p-4 p-md-5 mb-4 bg-white">
+                    <h2 class="fw-bold mb-4">Menghubungkan Dunia Melalui Jaringan</h2>
+                    <p class="text-muted leading-relaxed mb-5">
+                        TJKT adalah program keahlian yang mempelajari cara instalasi perangkat jaringan lokal (LAN), luas (WAN), sistem operasi server, hingga keamanan siber. Siswa dididik untuk mampu menangani berbagai infrastruktur digital yang menjadi tulang punggung industri 4.0.
+                    </p>
+
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box me-3"><i class="fas fa-network-wired"></i></div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Network Engineer</h6>
+                                    <p class="small text-muted mb-0">Konfigurasi Router, Switch (Cisco/Mikrotik), dan Fiber Optic.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box me-3" style="background-color: #fff4e6; color: #fd7e14;"><i class="fas fa-server"></i></div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Server Administration</h6>
+                                    <p class="small text-muted mb-0">Manajemen Cloud Computing, Linux Server, dan Virtualisasi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="fw-bold mb-3">Fasilitas Laboratorium</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            Laboratorium Networking (Cisco & Mikrotik)
+                            <span class="badge bg-teal rounded-pill" style="background-color: var(--primary-tjkt);">3 Unit</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            Alat Splicing Fiber Optic Modern
+                            <span class="badge bg-teal rounded-pill" style="background-color: var(--primary-tjkt);">Tersedia</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            Sertifikasi Internasional (CCNA / MTCNA)
+                            <span class="badge bg-teal rounded-pill" style="background-color: var(--primary-tjkt);">Kurikulum Industri</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                
+                <div class="card sidebar-card mb-4 bg-white">
+                    <div class="sidebar-header text-center">Status Pendaftaran</div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="small fw-bold">Kuota Terisi</span>
+                            <span class="small fw-bold">95%</span>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%"></div>
+                        </div>
+                        <button class="btn btn-primary w-100 fw-bold py-2 mb-2" style="background-color: var(--primary-tjkt); border: none;" data-bs-toggle="modal" data-bs-target="#modalDaftar">DAFTAR SEKARANG</button>
+                        <div class="modal fade" id="modalDaftar" tabindex="-1" aria-labelledby="modalDaftarLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                              <div class="modal-header text-white" style="background-color: var(--primary-tjkt);">
+                                <h5 class="modal-title fw-bold" id="modalDaftarLabel"><i class="bi bi-pencil-square p-2"></i>Formulir Pendaftaran</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+
+                              <div class="modal-body">
+                                <form>
+                                  <div class="mb-3">
+                                    <label class="form-label fw-semibold">Nama Lengkap</label>
+                                    <input type="text" class="form-control" placeholder="Masukkan nama lengkap">
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label class="form-label fw-semibold">NISN</label>
+                                    <input type="text" class="form-control" placeholder="Masukkan NISN (Nomer Induk Siswa Nasional)">
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label class="form-label fw-semibold">Tempat Lahir</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label class="form-label fw-semibold">Tanggal Lahir</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label class="form-label fw-semibold">Agama</label>
+                                    <select class="form-select">
+                                      <option selected disabled>-- Pilih Agama --</option>
+                                      <option value="islam">Islam</option>
+                                      <option value="kristen">Kristen</option>
+                                      <option value="katolik">Katolik</option>
+                                      <option value="budha">Budha</option>
+                                      <option value="hindu">Hindu</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label class="form-label fw-semibold">Jenis Kelamin</label>
+                                    <select class="form-select">
+                                      <option value="laki-laki">Laki-Laki</option>
+                                      <option value="perempuan">Perempuan</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label class="form-label fw-semibold">Nama Orang Tua</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label fw-semibold">Alamat</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label class="form-label fw-semibold">Jurusan</label>
+                                    <select class="form-select">
+                                      <option selected disabled>Pilih jurusan tujuan...</option>
+                                      <option value="pplg">PPLG (Pengembangan Perangkat Lunak & Gim)</option>
+                                      <option value="tjkt">TJKT (Teknik Jaringan Komputer & Telekomunikasi)</option>
+                                      <option value="kuliner">Kuliner</option>
+                                      <option value="busana">Busana</option>
+                                      <option value="otomotif">Otomotif</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label fw-semibold">Alamat Email</label>
+                                    <input type="email" class="form-control" id="Masukkan Alamat Email Yang Aktif" aria-describedby="emailHelp">
+                                  </div>
+                              
+                                  <div class="mb-3">
+                                    <label class="form-label fw-semibold">Nomor Telepon</label>
+                                    <input type="tel" class="form-control" placeholder="Contoh:0812xxxx">
+                                  </div>
+
+                                  <div class="mb-3">
+                                      <label for="formFile" class="form-label fw-semibold">Foto Profil</label>
+                                      <input class="form-control" type="file" id="formFile">
+                                      <div id="foto-profil" class="form-text">Format: JPG, PNG (Maks 2MB).</div>
+                                    </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                    <button type="button-cancel" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                                    <button type="button-submit" class="btn text-white" style="background-color: var(--primary-tjkt);"><i class="bi bi-clipboard-check p-2"></i>Kirim Pendaftaran</button>
+                                  </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn btn-light w-100 text-muted small" onclick="window.history.back()"><i class="fas fa-arrow-left me-2"></i>Kembali</button>
+                    </div>
+                </div>
+
+                <div class="card sidebar-card bg-white">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80" class="card-img-top" alt="Server Room">
+                    <div class="card-body">
+                        <p class="card-text fst-italic text-muted small mb-3">
+                            "Kurikulum TJKT di sini sangat relevan. Saya sudah bekerja sebagai NOC sebelum menerima ijazah!"
+                        </p>
+                        <h6 class="fw-bold mb-0">- Budi, Alumni 2025</h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">© 2026 SMK DIGITAL. Seluruh Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
